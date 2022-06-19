@@ -1,0 +1,179 @@
+main{
+    margin: 4% 0 0 0;
+}  
+form{
+    background-color: var(--yellow);
+    color: var(--white);
+    width: 25%;
+    height: 25%;
+    padding: 100px;
+    border-radius: 10px;
+}
+label{
+    margin-top: 5%;
+}
+input{
+    width: 80%;
+}
+input{
+    padding: 5px 10px;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+input::placeholder{
+    color: var(--grey);
+}
+input[type="submit"]{
+    font-size: 15px;
+    width: 25%;
+    align-self: flex-end;
+}
+
+h1{
+    text-align: center;
+}
+select{
+    color: var(--grey);
+}
+select, textarea{
+    padding: 5px 10px;
+    margin: 16px 0;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+option{
+    color: var(--grey);
+}
+.by-two{
+    width: 100%;
+}
+.by-two:nth-child(1){
+    margin-right: 10px;
+}
+.by-two:nth-child(2){
+    margin-left: 10px;
+}
+
+input[type="checkbox"]:nth-child(1){
+    margin-right: 25px;
+}
+input[type="checkbox"]{
+    width: 13px;
+    margin-left: 10px;
+}
+.radios{
+    margin-bottom: 25px;
+}
+.radios:nth-child(1){
+    margin-left: 10px;
+}
+.small{
+    margin-left: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+@media screen and (max-width:2650px) {
+    form{
+        width: 700px;
+    }
+    input[type="submit"]{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    form{
+        width: 650px;
+    }
+    input[type="submit"]{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    form{
+        padding: 75px;
+        font-size: 13px;
+    }
+    input[type="submit"]{
+        font-size: 13px;
+        width: 100px!important;
+    }
+    form input{
+        font-size: 13px;
+    }
+    select{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:768px) {
+    form{
+        padding: 75px;
+        font-size: 13px;
+        width: 550px!important;
+    }
+    input[type="submit"]{
+        font-size: 13px;
+        width: 30%!important;
+    }
+    form input{
+        font-size: 13px;
+    }
+    select{
+    margin: 16px 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .checkbox-cont{
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+        align-items: flex-start!important;
+    }
+    .date-container{
+        text-align: left;
+        align-items: flex-start!important;
+        flex-direction: column;
+    }
+    .radios{
+        margin: 0!important;
+    }
+    form{
+        width: 100%!important;
+        border-radius: 0;
+        font-size: 13px;
+        padding: 50px;
+    }
+    .container-two{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .by-two{
+        margin: 0!important;
+        width: 100%;
+    }
+    input{
+        font-size: 15px!important;
+    }
+    input[type="submit"]{
+        font-size: 11px;
+        width: 35%!important;
+    }
+    select{
+        font-size: 15px!important;
+    }
+}
+@media screen and (max-width:375px) {
+    input[type="submit"]{
+        font-size: 10px!important;
+        /* width: 35%!important; */
+    }
+}

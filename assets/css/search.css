@@ -1,0 +1,345 @@
+select{
+    padding: 5px 10px;
+    margin: 16px 0;
+    width: 250px;
+    font-size: 15px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+.title-svg{
+    margin-left: 25px;
+}
+option{
+    color: var(--grey);
+}
+main{
+    margin: 0px 50px;
+}
+h1{
+    margin-top: 50px;
+}
+.profil-card{
+    margin: 20px 100px;
+    padding: 40px;
+    width: 200px;
+    height: 260px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+.profil-img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.profil-card p {
+    margin-bottom: 0!important;
+}
+
+small{
+    font-size: 15px!important;
+    margin-bottom: 0;
+}
+.star-container{
+    height: 17px;
+}
+.stars{
+    margin: 0px 1px!important;
+    width: 15px;
+    filter: invert(69%) sepia(28%) saturate(2567%) hue-rotate(351deg) brightness(98%) contrast(101%);
+}
+
+form{
+    background-color: var(--yellow);
+    color: var(--white);
+    width: 610px;
+    padding: 10px;
+    margin: 0!important;
+    border-radius: 10px;
+}
+.main-svg{
+    width: 270px;
+}
+h1{
+    text-align: center;
+}
+label{
+    width: 160px;
+    margin: 0 10px;
+}
+
+input{
+    padding: 3px 10px;
+    width: 450px;
+    font-size: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+input::placeholder{
+    color: var(--grey);
+}
+input[type="submit"]{
+    padding: 4px;
+    font-size: 15px;
+    width: 120px;
+}
+
+.container-search{
+    margin-top: 25px;
+    width: 90%;
+}
+.container-search p {
+    text-align: right;
+    font-size: 35px!important;
+    padding-right: 25px;
+}
+
+.hr-container hr{
+    width: 85%;
+    margin: 25px 0;
+}
+@media screen and (min-width: 2561px) {
+    .profil-card{
+        width: 330px;
+        height: 370px;
+    }
+}
+@media screen and (max-width: 2560px) {
+    .profil-card{
+        width: 300px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 2100px) {
+    .profil-card{
+        width: 270px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 1980px) {
+    .profil-card{
+        width: 200px;
+        height: 250px;
+    }small{
+        font-size: 13px!important;
+        margin-bottom: 0;
+    }
+
+}
+@media screen and (max-width: 1705px) {
+    .profil-card{
+        width: 180px;
+        height: 220px;
+        margin: 20px 80px;
+    }
+    small{
+        font-size: 11px!important;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 1475px) {
+    .profil-card{
+        width: 180px;
+        height: 220px;
+        margin: 20px 50px;
+    }
+}
+@media screen and (max-width: 1225px) {
+    .profil-card{
+        width: 180px;
+        height: 220px;
+        margin: 20px 25px;
+    }
+    .container-search p {
+        font-size: 30px!important;
+    }
+    form{
+        width: 530px;
+    }
+    label{
+        font-size: 12px!important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .star-container{
+        height: 24px;
+        padding-bottom: 5px;
+    }
+    main{
+        margin: 0;
+    }
+    .profil-card{
+        width: 150px;
+        height: 200px;
+        margin: 15px 40px;
+        padding: 20px;
+    }
+    .container-search p {
+        font-size: 27px!important;
+    }
+    form{
+        width: 480px;
+    }
+    input{
+        padding: 1px 5px;
+    }
+    input[type="submit"]{
+        font-size: 11px!important;
+        width: 110px!important;
+    }
+    label{
+        font-size: 12px!important;
+    }
+    .main-svg{
+        width: 150px!important;
+    }
+}
+@media screen and (max-width: 924px) {
+    .profil-card{
+        margin: 15px 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-svg{
+        width: 100px!important;
+    }
+    .container-search p {
+        font-size: 22px!important;
+    }
+    .title-svg h1{
+        font-size: 30px!important;
+    }
+    form{
+        width: 400px;
+    }
+    form input{
+        font-size: 15px!important;
+        width: 150px;
+    }
+    input[type="submit"]{
+        font-size: 11px!important;
+        width: 110px!important;
+    }
+    .profil-card{
+        width: 120px;
+        height: 170px;
+        margin: 15px 20px;
+        padding: 20px;
+    }
+    small{
+        font-size: 9px!important;
+        margin-bottom: 0;
+    }
+    .stars{
+        width: 12px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .profil-card{
+        margin: 15px 10px;
+    }
+    .main-svg{
+        width: 90px!important;
+    }
+    .container-search p {
+        font-size: 18px!important;
+    }
+    .title-svg h1{
+        font-size: 25px!important;
+    }
+    label{
+        font-size: 9px;
+    }
+    form{
+        width: 300px;
+    }
+    form input{
+        font-size: 15px!important;
+        width: 120px;
+        margin-left: 0;
+    }
+    input[type="submit"]{
+        font-size: 9px!important;
+        width: 100px!important;
+    }
+}
+@media screen and (max-width: 500px) {
+    main{
+    text-align: center;
+    }
+    .profil-card{
+        width: 150px;
+        height: 200px;
+        margin: 15px 10px;
+    }
+    .container-search{
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .form-container p {
+        padding: 15px;
+    }
+    .main-svg{
+        margin-top: 50px;
+        width: 200px!important;
+    }
+    .container-search p {
+        text-align: center;
+        font-size: 22px!important;
+    }
+    .title-svg h1{
+        font-size: 35px!important;
+    }
+    .title-svg{
+        margin: 0;
+    }
+    label{
+        font-size: 9px;
+        width: 230px;
+    }
+    form{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    form input{
+        margin: 10px 0;
+        font-size: 17px!important;
+        width: 230px;
+        margin-left: 0;
+    }
+    input[type="submit"]{
+        margin-right: 85px;
+        font-size: 13px!important;
+        width: 100px!important;
+        align-self: flex-end;
+    }
+}
+@media screen and (max-width: 375px) {
+    input[type="submit"]{
+        margin-right: 65px;
+    }
+}
+@media screen and (max-width: 325px) {
+    input[type="submit"]{
+        margin-right: 35px;
+    }
+    .profil-card{
+        width: 120px;
+        height: 170px;
+        margin: 15px 10px;
+    }
+    select{
+        width: 180px;
+    }
+    h2{
+        line-break: anywhere;
+    }
+}

@@ -50,7 +50,7 @@ input, select{
     width: 100%;
     font-size: 20px;
     border: 1px solid var(--grey);
-    border-radius: 5px;
+    border-radius: 10px!important;
 }
 input::placeholder{
     color: var(--grey);
@@ -345,10 +345,10 @@ main{
         border-radius: 0;
     }
     form input[type="submit"]{
-        width: 35%!important;
+        width: 43%!important;
     }
     main{
-        margin-top: 70%!important;
+        margin-top: 85%!important;
     }
     .categorie-container{
         height: 800px;

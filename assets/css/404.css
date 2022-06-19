@@ -1,0 +1,48 @@
+
+.dark-background{
+    background-color: #000;
+}
+
+.text {
+	background: linear-gradient(141deg, #ff0000,#ff6a00,#fce00d);
+	background-size: 600% 600%;
+	font-weight: 900!important;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 4s ease-in-out infinite;
+	-moz-animation: animated_text 4s ease-in-out infinite;
+	-webkit-animation: animated_text 4s ease-in-out infinite;
+    font-family: 'robotothin';
+}
+h1{
+    font-family: 'biryaniblack'!important;
+    font-size: 150px!important;
+    margin: 0;
+}
+p{
+    margin: 0;
+    font-size: 50px!important;
+}
+@keyframes animated_text {
+	0% { background-position: 0px 30%; }
+	50% { background-position: 100% 96%; }
+	100% { background-position: 0px 5%; }
+}
+
+.link {
+	background: linear-gradient(141deg, #ff0000,#ff6a00,#fce00d);
+	background-size: 600%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 4s ease-in-out infinite;
+	-moz-animation: animated_text 4s ease-in-out infinite;
+	-webkit-animation: animated_text 4s ease-in-out infinite;
+    font-family: 'robotothin';
+    font-size: 45px!important;
+    margin: 0;
+}
+a.link:hover{
+    border-bottom: 1px solid white;
+    margin: 0;
+}
