@@ -22,7 +22,21 @@ input{
     font-size: 20px;
     border: 1px solid var(--grey);
     border-radius: 10px;
+    background-color: var(--white);
+    color: var(--black);
 }
+
+input[type="file"]{
+    padding: 5px 10px;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
 input::placeholder{
     color: var(--grey);
 }

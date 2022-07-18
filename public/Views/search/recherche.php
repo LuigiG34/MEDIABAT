@@ -5,7 +5,7 @@ ob_start();
 
 <body>
     <main>
-        <h1>RESULTAT RECHERCHE</h1>
+        <h1 class="text-start">RESULTAT RECHERCHE</h1>
         <h2><span>[METIER SELECTIONNE]</span><span>[VILLE SELECTIONNE]</span></h2>
         <div>
             <small>Filtrer par :</small>

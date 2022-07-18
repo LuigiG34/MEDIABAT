@@ -1,0 +1,100 @@
+button{
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 20px 0;
+    width: 250px;
+    font-size: 20px;
+    color: var(--white);
+    border: 1px solid var(--grey);
+    background-color: var(--yellow);
+    border-radius: 10px!important;
+}
+
+main{
+    width: 90%;
+}
+
+small{
+    width: 32%;
+}
+
+.profile-img{
+    margin: 20px 0;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.big-container{
+    margin: 3% 0;
+    height: 500px;
+}
+.star-container{
+    margin: 0 15px;
+}
+.note{
+    background-color: var(--orange);
+}
+
+.stars{
+    margin: 0px 1px!important;
+    width: 30px;
+    filter: invert(69%) sepia(28%) saturate(2567%) hue-rotate(351deg) brightness(98%) contrast(101%);
+}
+
+.hr-container{
+    padding: 35px;
+}
+
+.publication-container{
+    margin: 2% 10%;
+    width: 85%;
+}
+.publication{
+    width: 20%;
+    padding: 25px;
+    margin: 25px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+.publication img{
+    width: 100%;
+}
+button a{
+    text-decoration: none;
+    font-style: none;
+    color: var(--white)!important;
+}
+
+/***MODALS**/
+.my-modal-container{
+    margin-top: -90px;
+    position: fixed;
+    width: 100vw;
+    height: 102vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    z-index: 9999;
+}
+.my-modal{
+    padding: 25px;
+    width: 700px;
+    height: 500px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+.content{
+    height: 100%;
+    width: 100%;
+}
+.cross{
+    margin: 10px;
+    cursor: pointer;
+    filter: invert(50%) sepia(2%) saturate(10%) hue-rotate(326deg) brightness(104%) contrast(100%);
+}
+.cross-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: flex-start;
+}

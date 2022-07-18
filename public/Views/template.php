@@ -101,5 +101,8 @@
     </section>
     <script src="../../assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../../assets/js/template.js"></script>
+    <?php if (isset($script)){?>
+        <script src="../../assets/js/<?= $script?>"></script>
+    <?php }?>    
 </body>
 </html>

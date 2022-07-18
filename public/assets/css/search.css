@@ -45,7 +45,7 @@ small{
 }
 .stars{
     margin: 0px 1px!important;
-    width: 15px;
+    width: 25px;
     filter: invert(69%) sepia(28%) saturate(2567%) hue-rotate(351deg) brightness(98%) contrast(101%);
 }
 

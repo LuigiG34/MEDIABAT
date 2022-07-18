@@ -6,6 +6,9 @@ ob_start();
     <main class="d-flex flex-column justify-content-center align-items-center">
         <h1>MODIFICATION DU PROFIL</h1>
         <form action="" method="post" class="d-flex flex-column">
+    <label for="">Photo profile :
+            <input type="file" name="img" id="" class="form-control">
+    </label>
     <label for="">Email :
         <input type="email" name="" id="">
     </label>
@@ -18,7 +21,7 @@ ob_start();
     <div class="d-flex container-two">
                 <div class="by-two">
                     <label for="">Ville :</label>
-                    <input type="text" placeholder="Prenom...">
+                    <input type="text" placeholder="Ville...">
                 </div>
                 <div class="by-two">
                     <label for="" class=" mt-3">Code Postal :</label>
