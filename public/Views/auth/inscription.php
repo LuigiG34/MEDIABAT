@@ -27,11 +27,18 @@ ob_start();
             <div class="d-flex container-two">
                 <div class="by-two">
                     <label for="">Ville :</label>
-                    <input type="text" placeholder="Prenom...">
+                    <input type="text" id="ville" placeholder="Prenom..." list="villes">
+                    <datalist id="villes">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
                 </div>
                 <div class="by-two">
                     <label for="" class=" mt-3">Code Postal :</label>
-                    <select name="zipcode" id="">
+                    <select name="zipcode" id="zipcode">
                         <option value="zipcode" disabled="true" selected>Code Postal</option>
                         <option value="">75000</option>
                         <option value="">34000</option>
@@ -69,7 +76,7 @@ ob_start();
                     <small>**Laisse le champs "Métier" vide si vous êtes un utiliseur "Standard"</small>
                 </div>
             </div>
-            <input type="submit" value="S'inscrire">
+            <input type="submit" name="submit" id="submit" value="S'inscrire">
         </form>
     </main>
 </body>
@@ -79,5 +86,6 @@ $css = "forms.css";
 $title = "MEDIABAT - S'inscrire";
 $description = "Inscrivez-vous pour créer votre compte MEDIABAT.";
 $content = ob_get_clean();
+$script = "ville.js";
 require_once "../template.php";
 ?>

@@ -44,7 +44,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/brick-wall.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/brick-wall.svg" class="svg" alt="">
                             <p>Maçon</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -57,7 +57,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/design.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/design.svg" class="svg" alt="">
                             <p>Architecte</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -70,7 +70,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/light-bulb.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/light-bulb.svg" class="svg" alt="">
                             <p>Electricien</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -83,7 +83,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/png/padlock.png" class="svg" alt="">
+                            <img src="public/assets/icons/png/padlock.png" class="svg" alt="">
                             <p>Serrurier</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -96,7 +96,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/paint-roller.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/paint-roller.svg" class="svg" alt="">
                             <p>Peintre</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -109,7 +109,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/pipeline.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/pipeline.svg" class="svg" alt="">
                             <p>Plombier</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -122,7 +122,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/putty-knife.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/putty-knife.svg" class="svg" alt="">
                             <p>Plaquiste</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -135,7 +135,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/saw.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/saw.svg" class="svg" alt="">
                             <p>Menuisier</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -148,7 +148,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/tiles.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/tiles.svg" class="svg" alt="">
                             <p>Carreleur</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -161,7 +161,7 @@ ob_start();
                 <div class="categorie flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front d-flex justify-content-center align-items-center flex-column rounded">
-                            <img src="../../assets/icons/svg/categorie/wood.svg" class="svg" alt="">
+                            <img src="public/assets/icons/svg/categorie/wood.svg" class="svg" alt="">
                             <p>Charpentier</p>
                         </div>
                         <div class="flip-card-back d-flex justify-content-center align-items-center flex-column rounded">
@@ -177,7 +177,7 @@ ob_start();
         <section>
             <h2>QUI SOMMES-NOUS ?</h2>
             <article class="a-propos-container d-flex justify-content-center align-items-center">
-                <img src="../../assets/icons/svg/mediabat.svg" class="orange-svg" alt="">
+                <img src="public/assets/icons/svg/mediabat.svg" class="orange-svg" alt="">
                 <p>La plateforme MediaBat a pour objectif de lier des professionnels du secteur du BTP (rénovation, maçonneries, plomberie, électricien,
                     peintres, …) et des particuliers ayant besoin de prestations.<br>Le but de la plateforme étant de proposer à des professionnels un compte se comportant comme un portfolio présentant leurs réalisations, et ainsi simplifier le contact entre particuliers et professionnels.</p>
             </article>
@@ -190,5 +190,5 @@ $css = "index.css";
 $title = "MEDIABAT - La plateforme pour les professionels du BTP";
 $description = "MEDIABAT rénover et réparer n'a jamais été aussi facile. Notre objectif est de facilité le contact entre les meilleurs professionnels du BTP et vous.";
 $content = ob_get_clean();
-require_once "../template.php";
+require_once '../template.php';
 ?>

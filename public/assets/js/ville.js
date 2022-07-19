@@ -1,11 +1,25 @@
 let url = "https://geo.api.gouv.fr/communes";
+let format = "&format=json";
 
-fetch(url, {
-    method: 'get'
-}).then(response => response.json().then(results => {
+let villeInput = document.querySelector('#ville');
+let datalist = document.querySelector('#villes');
 
-    results.forEach(element => {
-        console.log(element.nom)
-        console.log(element.codesPostaux)
-    });
-}))
+
+
+villeInput.addEventListener('blur', () => {
+    let nom = villeInput.value;
+    let newUrl = url + nom + format;
+
+    fetch(newUrl, {
+        method: 'get'
+    }).then(response => response.json().then(results => {
+        results.forEach(res => {
+            
+        });
+    }))
+
+})
+
+
+console.log(element.nom)
+console.log(element.codesPostaux)
