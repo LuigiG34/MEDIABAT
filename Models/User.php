@@ -10,7 +10,6 @@ class User
     private $email_user;
 
     private $password_user;
-    private $password_again;
     private $birthdate_user;
     private $reset_code;
 
@@ -21,19 +20,19 @@ class User
     private $zipcode_user;
     private $id_job;
 
-    public function __construct($fname_user,$lname_user,$email_user,$password_user,$password_again,$birthdate_user,$status,$city_user,$zipcode_user,$id_job = null)
-    {
-        $this->fname_user = $fname_user;
-        $this->lname_user = $lname_user;
-        $this->email_user = $email_user;
-        $this->password_user = $password_user;
-        $this->password_again = $password_again;
-        $this->birthdate_user = $birthdate_user;
-        $this->status = $status;
-        $this->city_user = $city_user;
-        $this->zipcode_user = $zipcode_user;
-        $this->id_job = $id_job;
-    }
+    // public function __construct($fname_user,$lname_user,$email_user,$password_user,$password_again,$birthdate_user,$status,$city_user,$zipcode_user,$id_job = null)
+    // {
+    //     $this->fname_user = $fname_user;
+    //     $this->lname_user = $lname_user;
+    //     $this->email_user = $email_user;
+    //     $this->password_user = $password_user;
+    //     $this->password_again = $password_again;
+    //     $this->birthdate_user = $birthdate_user;
+    //     $this->status = $status;
+    //     $this->city_user = $city_user;
+    //     $this->zipcode_user = $zipcode_user;
+    //     $this->id_job = $id_job;
+    // }
 
     /**
      * Get the value of id_user
@@ -271,26 +270,6 @@ class User
         public function setPassword_user($password_user)
         {
                 $this->password_user = $password_user;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of password_again
-         */ 
-        public function getPassword_again()
-        {
-                return $this->password_again;
-        }
-
-        /**
-         * Set the value of password_again
-         *
-         * @return  self
-         */ 
-        public function setPassword_again($password_again)
-        {
-                $this->password_again = $password_again;
 
                 return $this;
         }
