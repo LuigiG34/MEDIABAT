@@ -7,10 +7,10 @@ ob_start();
         <h1>CONNEXION</h1>
             <form action="" method="post" class="d-flex flex-column">
             <label for="">Email :</label>
-                <input type="email" placeholder="Email...">
+                <input type="email" name="email" placeholder="Email...">
             <label for="">Mot de passe :</label>
-                <input  type="password" placeholder="Mot de passe...">
-                <input type="submit" value="Se connecter">
+                <input  type="password" name="password" placeholder="Mot de passe...">
+                <input type="submit" name="submit" value="Se connecter">
         </form>
     </main>
 </body>

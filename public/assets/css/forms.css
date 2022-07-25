@@ -72,7 +72,9 @@ option{
 .by-two:nth-child(2){
     margin-left: 10px;
 }
-
+#zipcode{
+    margin-top: 5%;
+}
 input[type="checkbox"]:nth-child(1){
     margin-right: 25px;
 }

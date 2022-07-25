@@ -41,8 +41,8 @@ p{
     font-family: 'robotothin';
     font-size: 45px!important;
     margin: 0;
+	transition: 0.6s ease-in-out;
 }
 a.link:hover{
-    border-bottom: 1px solid white;
-    margin: 0;
+    transform: scale(1.05);
 }

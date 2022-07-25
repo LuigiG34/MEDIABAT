@@ -8,21 +8,39 @@ use PDO;
 
 class UserManager extends Db
 {
-
-    public function setUser($user)
+    /**
+     * sets user basic data
+     *
+     * @param $id
+     * @param $fname
+     * @param $lname
+     * @param $email
+     * @param $password
+     * @param $birthdate
+     * @param $status
+     * @param $registration
+     * @param $city
+     * @param $zipcode
+     * @param $user_job
+     */
+    public function setUserBasic($id,$fname,$lname,$email,$password,$birthdate,$status,$registration,$city,$zipcode,$user_job)
     {
-        $u = new User();
-        $u->setId_user($user['id_user'])
-        ->setFname_user($user['fname_user'])
-        ->setLname_user($user['lname_user'])
-        ->setEmail_user($user['email_user'])
-        ->setPassword_user($user['password_user'])
-        ->setBirthdate_user($user['birthdate_user'])
-        ->setStatus($user['status_user'])
-        ->setCity_user($user['city_user'])
-        ->setZipcode_user($user['zipcode_user'])
-        ->setId_job($user['id_job']);
+        $user = new User();
+        $user->setId_user($id)
+        ->setFname_user($fname)
+        ->setLname_user($lname)
+        ->setEmail_user($email)
+        ->setPassword_user($password)
+        ->setBirthdate_user($birthdate)
+        ->setRegistration_date($registration)
+        ->setStatus($status)
+        ->setCity_user($city)
+        ->setZipcode_user($zipcode)
+        ->setJob_user($user_job);
+
+        $user->setSession();
     }
+
     /**
      * Insert users data in database
      *
@@ -36,13 +54,55 @@ class UserManager extends Db
      * @param int $zipcode_user
      * @param int $id_job
      */
-    public function createUser($fname_user,$lname_user,$email_user,$password_user,$birthdate_user,$status,$city_user,$zipcode_user,$id_job)
+    public function signUp($fname_user,$lname_user,$email_user,$password_user,$birthdate_user,$status,$city_user,$zipcode_user,$job_user)
     {
-        $stmt = Db::getBdd()->prepare('INSERT INTO users (fname_user, lname_user,email_user,password_user,birthdate_user,status,city_user,zipcode_user,id_job) VALUES (?,?,?,?,?,?,?,?,?)');
+        $stmt = Db::getBdd()->prepare('INSERT INTO users (fname_user, lname_user,email_user,password_user,birthdate_user,status,city_user,zipcode_user,job_user) VALUES (?,?,?,?,?,?,?,?,?)');
 
         $hash_password = password_hash($password_user, PASSWORD_ARGON2I);
         
-        $stmt->execute(array($fname_user,$lname_user,$email_user,$hash_password,$birthdate_user,$status,$city_user,$zipcode_user,$id_job));
+        $stmt->execute(array($fname_user,$lname_user,$email_user,$hash_password,$birthdate_user,$status,$city_user,$zipcode_user,$job_user));
+    }
+
+    /**
+     * sign In
+     *
+     * @param $email
+     * @param $password
+     */
+    public function signIn($email,$password)
+    {
+        // on recupere user grace a son email
+        $stmt = Db::getBdd()->prepare('SELECT password_user FROM users WHERE email = ?;');
+        $stmt->execute($email);
+
+        $pass = $stmt->fetchALL(PDO::FETCH_ASSOC);
+        var_dump($pass);
+        $comparePasswords = password_verify($password, $pass[0]["password_user"]);
+        if($comparePasswords == true){
+            $stmt = Db::getBdd()->prepare('SELECT * FROM users WHERE email_user = ? AND password_user = ?');
+
+            $stmt->execute(array($email,$password));
+
+            $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            var_dump($user);
+        }
+
+            // on instancie un User avec les infos de bases
+            // $this->setUserBasic(
+            //     $userArray[0]->id_user,
+            //     $userArray[0]->fname_user,
+            //     $userArray[0]->lname_user,
+            //     $userArray[0]->email_user,
+            //     $userArray[0]->password_user,
+            //     $userArray[0]->birthdate_user,
+            //     $userArray[0]->status,
+            //     $userArray[0]->registration_date_user,
+            //     $userArray[0]->city_user,
+            //     $userArray[0]->zipcode_user,
+            //     $userArray[0]->job_user
+            // );
+
     }
 
     /**
@@ -52,7 +112,6 @@ class UserManager extends Db
     {
         $stmt = Db::getBdd()->query('SELECT * FROM users');
         $data = $stmt->fetchAll(PDO::FETCH_OBJ);
-
         return $data;
     }
 
@@ -63,7 +122,7 @@ class UserManager extends Db
      */
     public function getUserById($id)
     {
-        $stmt = Db::getBdd()->query('SELECT * FROM users WHERE id='.$id);
+        $stmt = Db::getBdd()->query('SELECT * FROM users WHERE id_user='.$id);
         $data = $stmt->fetch(PDO::FETCH_OBJ);
 
         return $data;

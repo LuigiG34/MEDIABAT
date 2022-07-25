@@ -1,8 +1,8 @@
 <?php
 
-use App\Autoloader;
+// use App\Autoloader;
 use App\Core\Main;
-
+use App\Autoloader;
 // On definie une constante contenant le dossier racine du projet
 define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF']));
 

@@ -2,7 +2,8 @@
 
 namespace App\Core;
 
-use App\Controllers\ApiController;
+use App\Controllers\UserController;
+
 /**
  * Router Class
  */
@@ -15,6 +16,7 @@ class Main
      */
     public function start()
     {
+        $UserController = new UserController();
         // if there is nothing in url then display 404 ERROR
         if (!isset($_GET['page'])) {
             require URL."public/Views/main/index.php";
@@ -28,10 +30,12 @@ class Main
                     break;
 
                 case 'connexion':
+                    $UserController->signInUser();
                     require URL."public/Views/auth/connexion.php";
                     break;
                 
                 case 'inscription':
+                    $UserController->signUpUser();
                     require URL."public/Views/auth/inscription.php";
                     break;
 
@@ -40,12 +44,28 @@ class Main
                     break;
                 
                 case 'profil':
-                    if(isset($url[1]) && $url[1] === "modif"){
-                        var_dump($url);
-                        require URL."public/Views/users/modifier-profil.php";
+                    
+
+                    if(isset($url[1])){
+                        switch($url[1])
+                        {
+                        case 'modif':
+                            if(isset($url[2])){
+                                http_response_code(404);
+                                require URL."public/views/error/404.php";
+                            }else{
+                                require URL."public/Views/users/modifier-profil.php";
+                            }
+                            break;
+                        default:
+                            http_response_code(404);
+                            require URL."public/views/error/404.php";
+                            break;
+                        }   
                     }else{
-                        require URL."public/Views/users/profil.php";
+                       require URL."public/Views/users/profil.php"; 
                     }
+                    
                     break;
                 default:
                     // If none of the above than display 404 ERROR
